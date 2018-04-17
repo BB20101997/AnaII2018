@@ -1,6 +1,8 @@
-\documentclass[12pt,a4paper,oneside,ngerman]{article}
-\usepackage[utf8]{inputenc}
-\usepackage{amsmath}
+\documentclass[12pt,a4paper,oneside,ngerman]{article} %% Dokumenten Parameter und Art des Dokuments
+\usepackage[utf8]{inputenc} %% Diese Datei ist im utf8 Format dies ist hier damit Latex uns versteht
+\usepackage{amsmath} %% Packet zur verwendung Mathematischer Formeln
+\usepackage{amssymb} %% Packet zur verwendung Mathematischer Symbole
+\usepackage{microtype} %% Sorgt für besseren umgang mit zu lange/kurzen Zeilen
 
 \title{Ana II Blatt 1}
 \author{Bennet Bleßmann, Jonas Lange}
@@ -28,16 +30,10 @@ Es bleibt zu Zeigen, dass $\lim\limits_{x \to \infty}\frac{\ln(\cosh(x)}{x} = 1 
 
 \subparagraph*{Behauptung}
 
-$a \in \rm I \!R_{+} \lim\limits_{x \to \infty} n(\sqrt[n]{a}-1) = ?$
+$a \in \mathbb{R}_{+} \lim\limits_{n \to \infty} n(\sqrt[n]{a}-1) = ?$
 
 
 \subparagraph*{Beweis}
-
-$\lim\limits_{x \to \infty } \frac{\ln{\cosh{x}}}{x} $
-
-
-
-
 
 \subsection*{c)}
 
@@ -56,7 +52,8 @@ $\lim\limits_{x \to \infty } \frac{\ln{\cosh{x}}}{x} $
 
 \subsection*{a)}
 
-Die definition nach LS setzt belibig oft diff'barkeit Vorraus verwendet aber nur die einfache Ableitung im folge Text.
+Die definition nach LS setzt belibig oft diff'barkeit Vorraus verwendet,
+aber nur die einfache Ableitung im folge Text.
 Weiter ist die definition für einen Vorzeichenwechsel recht waage Formuliert.
 Auch Konstante Funktionen haben nach unserer Definition Extrempunkte, nach der LS definition
 hat z.B. die konstante 1 Funktion kein Extremum.
