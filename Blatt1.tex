@@ -12,6 +12,8 @@
 \section*{Nr.H1}
 \subsection*{a)}
 
+
+
 \subparagraph*{Behauptung}
 
 $\lim\limits_{x \to \infty}(\cosh(x)^{\frac{1}{x}}) = e$
@@ -24,41 +26,33 @@ Es gilt: $\cosh(x))^{\frac{1}{x}} = (e^{\ln(\cosh(x))})^{\frac{1}{x}}
 Es bleibt zu Zeigen, dass $\lim\limits_{x \to \infty}\frac{\ln(\cosh(x)}{x} = 1 $\\ 
 \indent Es gilt:  
 
-
-	
 \subsection*{b)}
 
 \subparagraph*{Behauptung}
 
-$a \in \mathbb{R}_{+} \lim\limits_{n \to \infty} n(\sqrt[n]{a}-1) = ?$
-
+$a \in \mathbb{R}_{+} \lim\limits_{n \to \infty} n(\sqrt[n]{a}-1) = 0$
 
 \subparagraph*{Beweis}
+
+\indent $ n(\sqrt[n]{a}-1) = n\sqrt[n]{a} - n = \sqrt[n]{an^{n}} - n $ \\
+\indent $ \Rightarrow \lim\limits_{n \to \infty} n(\sqrt[n]{a}-1) = \lim\limits_{n \to \infty} \sqrt[n]{an^{n}} - n = 0 $
+
+
 
 \subsection*{c)}
+Sei $ f:\mathbb{R} \to \mathbb{R},f(x) = x + \sin(x)\cos(x) $ und $ g:\mathbb{R} \to \mathbb{R},g(x) = f(x)e^{\sin(x)} $.
 
-\subparagraph*{Behauptung}
+\subparagraph*{Behauptung} ~\\
+\indent $\lim\limits_{x \to \infty} \dfrac{f'(x)}{g'(x)}$ existiert.\\
+\indent $\lim\limits_{x \to \infty} \dfrac{f(x)}{g(x)}$ existiert nicht.
 
-\subparagraph*{Beweis}
+\subparagraph*{Beweis} ~\\
+\indent $ f'(x) = \cos(x)^{2}-\sin(x)^{2} = \cos(x)^{2}-(1-\cos(x)^{2}) = 2 cos(x)^{2} - 1 $ \\
+\indent $ g'(x) = f'(x)e^{\sin(x)}+f(x)e^{\sin(x)}cos(x)$ \\
 
-\section*{Nr.H2}
+%% TODO finish this proof
 
-\subsection*{a)}
-
-\subsection*{b)}
-
-
-\section*{Nr.H3}
-
-\subsection*{a)}
-
-Die definition nach LS setzt belibig oft diff'barkeit Vorraus verwendet,
-aber nur die einfache Ableitung im folge Text.
-Weiter ist die definition für einen Vorzeichenwechsel recht waage Formuliert.
-Auch Konstante Funktionen haben nach unserer Definition Extrempunkte, nach der LS definition
-hat z.B. die konstante 1 Funktion kein Extremum.
-
-
-\subsection*{b)}
+\include{Blatt1-H2}
+\include{Blatt1-H3}
 	
 \end{document}
