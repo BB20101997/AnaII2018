@@ -1,4 +1,5 @@
 \documentclass[12pt,a4paper,oneside,ngerman]{article}
+\usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 
 \title{Ana II Blatt 1}
@@ -11,9 +12,17 @@
 
 \subparagraph*{Behauptung}
 
-$\lim\limits_{x \to \infty}(\cosh(x))^{\frac{1}{x}} = ?$
+$\lim\limits_{x \to \infty}(\cosh(x)^{\frac{1}{x}}) = e$
 
 \subparagraph*{Beweis}
+
+Es gilt: $\cosh(x))^{\frac{1}{x}} = (e^{\ln(\cosh(x))})^{\frac{1}{x}}
+= (e^{\frac {\ln(\cosh(x))}{x}*x})^{\frac{1}{x}} = e^{\frac{\ln(\cosh(x)}{x}}$
+
+Es bleibt zu Zeigen, dass $\lim\limits_{x \to \infty}\frac{\ln(\cosh(x)}{x} = 1 $\\ 
+\indent Es gilt:  
+
+
 	
 \subsection*{b)}
 
