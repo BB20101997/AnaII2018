@@ -1,0 +1,44 @@
+\section*{Nr.H1}
+\subsection*{a)}
+
+
+
+\subparagraph*{Behauptung}
+
+$\lim\limits_{x \to \infty}(\cosh(x)^{\frac{1}{x}}) = e$
+
+\paragraph*{Beweis}
+
+Es gilt: $\cosh(x))^{\frac{1}{x}} = (e^{\ln(\cosh(x))})^{\frac{1}{x}}
+= (e^{\frac {\ln(\cosh(x))}{x}*x})^{\frac{1}{x}} = e^{\frac{\ln(\cosh(x)}{x}}$
+Es bleibt zu Zeigen, dass $\lim\limits_{x \to \infty}\frac{\ln(\cosh(x))}{x} = 1 $\\ 
+Sei $f(x) = \ln(\cos(x))$ und $g(x)=x$ dann gilt: $f'(x) = \frac{e^{x}-e^{-x}}{e^{x}+e^{-x}} $ und $g'(x) = 1$ also  $\lim\limits_{   x \to \infty} \frac{f'(x)}{g'(x)} = 1 $ (nach G2 c) \\
+Da ausserderm $g'(x)\neq 0$ und $ \lim\limits_{x\to\infty} |g(x)| = \infty $ folgt die Behauptung nach l'Hopital
+
+\subsection*{b)}
+
+\subparagraph*{Behauptung}
+
+$\forall a\in \mathbb{R}_{+}:\lim\limits_{n \to \infty} n(\sqrt[n]{a}-1) = 0$
+
+\paragraph*{Beweis}
+Es gilt: $n(\sqrt[n]{a}-1) = \frac{(\sqrt[n]{a}-1)}{n^{-1}}$\\
+Seien $f(x):= \sqrt[n]{a}-1 = e^{\frac{\ln(a)}{n}}-1$ und $g(x):=n^{-1}$ Dann gilt \\
+$f'(x) = e^{\frac{\ln(a)}{n}}(-\frac{\ln(a)}{n^2})$ und $g'(x) = -\frac{1}{n^2}$. Somit folgt \\
+$\frac{f'(x)}{g'(x)} = e^{\frac{\ln(a)}{n}}(-\frac{\ln(a)}{n^{2}})(-n^{2}) = e^{\frac{\ln(a)}{n}}\ln(a) \xrightarrow[n \to \infty]{} ln(a)$ \\ Da f und g 
+
+
+
+
+\subsection*{c)}
+Sei $ f:\mathbb{R} \to \mathbb{R},f(x) = x + \sin(x)\cos(x) $ und $ g:\mathbb{R} \to \mathbb{R},g(x) = f(x)e^{\sin(x)} $.
+
+\subparagraph*{Behauptung} ~\\
+\indent $\lim\limits_{x \to \infty} \dfrac{f'(x)}{g'(x)}$ existiert.\\
+\indent $\lim\limits_{x \to \infty} \dfrac{f(x)}{g(x)}$ existiert nicht.
+
+\paragraph*{Beweis} ~\\
+\indent $ f'(x) = \cos(x)^{2}-\sin(x)^{2} = \cos(x)^{2}-(1-\cos(x)^{2}) = 2 cos(x)^{2} - 1 $ \\
+\indent $ g'(x) = f'(x)e^{\sin(x)}+f(x)e^{\sin(x)}cos(x)$ \\
+
+%% TODO finish this proof
