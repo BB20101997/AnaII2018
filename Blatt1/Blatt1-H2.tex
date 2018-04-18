@@ -1,6 +1,11 @@
 \section*{Nr.H2}
 
 \subsection*{a)}
+\paragraph*{Vorraussetzung:} Seien die Funktionsfolgen $f_{n}$ und $g_{n}$ wie auf dem Aufgabenblatt definiert. 
+
+\paragraph*{Behauptung:} $f_{n}$ und $g_{n}$ konvergieren Punktweise
+
+\paragraph{Beweis:}
 
 \paragraph*{Funktion f Fall 1 $ x \in [0,\pi) $}
 $ \Rightarrow \sin(x) \in [0,1) \Rightarrow  \lim\limits_{n \to \infty} sin(x)^{n} = 0 $
@@ -12,10 +17,19 @@ $ \Rightarrow \lim\limits_{n \to \infty} sin(x)^{n} = 1 $
 %Für x = \pi ist sin(x) = 1 d.h. sin(x)^n konvergiert gegen 1
 
 \paragraph*{Funktion g}
-$\forall x \in \mathbb{R} : \lim\limits_{n \to \infty}xe^{-nx^{2}} = 0$
-\begin{large}
-//TODO 
-\end{large}
+[z.z. $\forall x \in \mathbb{R} : \lim\limits_{n \to \infty}xe^{-nx^{2}} = 0$] \\
+Für den Fall $x = 0$ gilt die Behauptung offensichtlich\\
+Sei also $x \neq 0$ und sei $\epsilon \in \mathbb{R}_{>0}$. \\
+Sein nun $n \in  \mathbb{N}$ mit $n > -\frac{\ln(\frac{\epsilon}{|x|})}{x^{2}}$
+Es gelten die folgenden Äquivalenzen:\\
+ $|g_{n}(x)-0|<\epsilon \\
+ \Leftrightarrow |x e^{-nx^{2}}|<\epsilon \\
+ \Leftrightarrow e^{-nx^{2}}<\frac{\epsilon}{|x|} \\
+ \Leftrightarrow -nx^{2}<ln(\frac{\epsilon}{|x|}) \\
+ \Leftrightarrow n > -\frac{\ln(\frac{\epsilon}{|x|})}{x^{2}} \\ $
+ Hierraus folgt die Behauptung.
+ 
+
 
 
 \subsection*{b)}
