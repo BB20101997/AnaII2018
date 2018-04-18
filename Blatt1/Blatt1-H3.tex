@@ -10,3 +10,16 @@ hat z.B. die konstante 1 Funktion kein Extremum.
 
 
 \subsection*{b)}
+
+\section*{Nr. H3}
+\subsection*{Vorraussetzung:} Seien $f_{n}$ und $g_{n}$ Funktionsfolgen, $f_{n}, g_{n} : X \rightarrow \mathbb{R}, X \subseteq \mathbb{R}$ wobei auf $X f_{n}$ gleichmäßig gegen die Grenzfunktion $f$ und $g_{n}$ gleichmäßig gegen die Grenzfunktion $g$ Konvergiert.
+
+\subsection*{Behauptung:} Die Funktionsfolge $(f_{n}+g_{n})$ konvergiert auf X gleichmäßig gegen $(f+g)$.
+
+\subsection*{Beweis:} Sei $\epsilon \in \mathbb{R}_{>0}$. Dann gibt es $N_{\epsilon f}$ und $N_{\epsilon g}$, so dass gilt: \\
+$\forall n \in \mathbb{N} : n \geq N_{\epsilon f} \Rightarrow |f_{n}-f| < \frac{\epsilon} {2}$\\
+und \\
+$\forall n \in \mathbb{N} : n \geq N_{\epsilon g} \Rightarrow |g_{n}-g| < \frac{\epsilon} {2}$ \\
+Sei nun  $N_{\epsilon} := max(N_{\epsilon f}, N_{\epsilon g})$, dann gilt: \\
+$\epsilon = \frac{\epsilon} {2}+\frac{\epsilon} {2} > |f_{n}-f|+|g_{n}-g| \geq |f_{n}-f+g_{n}-g| = |(f_{n}+g_{n})-(f+g)|$\\
+q.e.d.
