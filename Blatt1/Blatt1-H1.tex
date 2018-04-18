@@ -19,13 +19,13 @@ Da ausserderm $g'(x)\neq 0$ und $ \lim\limits_{x\to\infty} |g(x)| = \infty $ fol
 
 \subparagraph*{Behauptung}
 
-$\forall a\in \mathbb{R}_{+}:\lim\limits_{n \to \infty} n(\sqrt[n]{a}-1) = 0$
+$\forall a\in \mathbb{R}_{+}:\lim\limits_{n \to \infty} n(\sqrt[n]{a}-1) = \ln(a)$
 
 \paragraph*{Beweis}
 Es gilt: $n(\sqrt[n]{a}-1) = \frac{(\sqrt[n]{a}-1)}{n^{-1}}$\\
 Seien $f(x):= \sqrt[n]{a}-1 = e^{\frac{\ln(a)}{n}}-1$ und $g(x):=n^{-1}$ Dann gilt \\
 $f'(x) = e^{\frac{\ln(a)}{n}}(-\frac{\ln(a)}{n^2})$ und $g'(x) = -\frac{1}{n^2}$. Somit folgt \\
-$\frac{f'(x)}{g'(x)} = e^{\frac{\ln(a)}{n}}(-\frac{\ln(a)}{n^{2}})(-n^{2}) = e^{\frac{\ln(a)}{n}}\ln(a) \xrightarrow[n \to \infty]{} ln(a)$ \\ Da f und g 
+$\frac{f'(x)}{g'(x)} = e^{\frac{\ln(a)}{n}}(-\frac{\ln(a)}{n^{2}})(-n^{2}) = e^{\frac{\ln(a)}{n}}\ln(a) \xrightarrow[n \to \infty]{} ln(a)$ \\ Da $f$ und $g$ differenzierbar sind, $g'(x)\neq0 $ f.a. $ x>0$ und $\lim\limits_{n \to \infty} f(x) = \lim\limits_{n \to \infty} g(x) = 0$ folgt nach l'Hopital die Behauptung
 
 
 
