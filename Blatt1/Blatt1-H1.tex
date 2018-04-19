@@ -35,8 +35,8 @@ Sei $ f:\mathbb{R} \to \mathbb{R},f(x) = x + \sin(x)\cos(x) $
 und $ g:\mathbb{R} \to \mathbb{R},g(x) = f(x)e^{\sin(x)} $.
 
 \subparagraph*{Behauptung} ~\\
-\indent $\lim\limits_{x \to \infty} \dfrac{f'(x)}{g'(x)}$ existiert.\\
-\indent $\lim\limits_{x \to \infty} \dfrac{f(x)}{g(x)}$ existiert nicht.
+\indent $\lim\limits_{x \to \infty} \dfrac{f(x)}{g(x)}$ existiert nicht. \\
+\indent $\lim\limits_{x \to \infty} \dfrac{f'(x)}{g'(x)}$ existiert.
 
 \paragraph*{Beweis} ~\\
 
@@ -44,7 +44,7 @@ $ \frac{f(x)}{g(x)}
 = \frac{x+\sin(x)\cos(x)}{(x+\sin(x)\cos(x))e^{\sin(x)}}
 \overset{x > 1}{=} \frac{1}{e^{\sin(x)}}$ \\
 
-$ e^{\sin(x)} $ konvergiert für $x \to \infty$ offensichtlich nicht und damit konvergiert auch $ \frac{f(x)}{g(x)} , x \to \infty$ nicht. \\
+$ e^{\sin(x)} $ konvergiert für $x \to \infty$ offensichtlich nicht und damit konvergiert auch $ \frac{f(x)}{g(x)} $, $ x \to \infty$ nicht. \\
 
 $ f'(x) = 1 + \cos(x)^{2}-\sin(x)^{2} = 1 + \cos(x)^{2}-(1-\cos(x)^{2}) = 2 cos(x)^{2}$ \\
 
@@ -52,9 +52,9 @@ $ g'(x) = f'(x)e^{\sin(x)}+f(x)e^{\sin(x)}\cos(x) \\
 = [2\cos(x)^{2} + (x + \sin(x)\cos(x))cos(x)]e^{\sin(x)} \\
 = [2\cos(x)^{2} + x\cos(x) + \sin(x)\cos(x)^{2}]e^{sin(x)} $ \\
 
-$\frac{f'(x)}{g'(x)} = \frac{2\cos(x)^{2}}{[2\cos(x)^{2} + x\cos(x) + \sin(x)\cos(x)^{2}]e^{sin(x)}}$ \\
-
-%% TODO finish this proof
-
+$ \lim\limits_{x \to \infty}\frac{f'(x)}{g'(x)} \\
+= \lim\limits_{x \to \infty}\frac{2\cos(x)^{2}}{[2\cos(x)^{2} + x\cos(x) + \sin(x)\cos(x)^{2}]e^{sin(x)}} \\
+= \lim\limits_{x \to \infty}\frac{2\cos(x)}{[2\cos(x) + x + \sin(x)\cos(x)]e^{sin(x)}}
+ = 0$ \\
 
 Das Resultat bedeutet das es notwendig ist vor der Anwendung der Regel von l'Hopital die Vorraussetzung gründlich zu prüfen.
