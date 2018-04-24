@@ -7,29 +7,29 @@ ein (reelles) Polynom $n$-ten Grades, sowie $x_{0} \in \mathbb{R}$.
 
 \subsubsection*{Behauptung}
 
-$\forall k \in \{1,...,n\}$ $\forall x \in \mathbb{R}$ gilt
+$\forall k \in \{0,...,n\}$ $\forall x \in \mathbb{R}$ gilt
 
 \[
-	p^{(k)}(x) = \sum\limits^{n-k}_{\nu=0}a_{\nu+k}\frac{(\nu+k)!}{\nu!}(x)^{\nu} 
+	p^{(k)}(x) = \sum\limits^{n-k}_{\nu=0}a_{\nu+k}\frac{(\nu+k)!}{\nu!}x^{\nu} 
 \]
 
 \subsubsection*{Beweis}
 
 \paragraph*{IA}
 
-Für $k = 1$ gilt:
+Für $k = 0$ gilt:
 
 $
- p^{(1)}(x)
- = \sum\limits^{n}_{\nu=1} a_{\nu} \nu (x)^{\nu-1}
- = \sum\limits^{n-1}_{\nu=0} a_{\nu+1} (\nu+1) (x)^{\nu}
- = \sum\limits^{n-1}_{\nu=0} a_{\nu+1} \frac{(\nu+1)!}{\nu!} (x)^{\nu}
+ p^{(0)}(x)
+ = \sum\limits^{n}_{\nu=0} a_{\nu} x^{\nu}
+ = \sum\limits^{n-0}_{\nu=0} a_{\nu+0} \frac{(\nu+0)!}{\nu!} x^{\nu}
+ = \sum\limits^{n-k}_{\nu=0} a_{\nu+k} \frac{(\nu+k)!}{\nu!} x^{\nu}
 $  
 
 
 \paragraph*{IV}
 
-Sein $k \in \{1,...,n-1\}$ mit 
+Sein $k \in \{0,...,n-1\}$ mit 
 $p^{(k)}(x) = \sum\limits^{n-k}_{\nu=0}a_{\nu+k}\frac{(\nu+k)!}{\nu!}x^{\nu} $
 
 \paragraph*{IS}
