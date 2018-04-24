@@ -3,7 +3,7 @@ dist: trusty
 before_install:
 - sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-full
 script:
-- for i in *.tex; do pdflatex -interaction=nonstopmode -halt-on-error $i;done
+- build.sh
 
 deploy:
   provider: releases
