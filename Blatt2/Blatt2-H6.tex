@@ -6,6 +6,8 @@
 
 Für $\sum\limits^{\infty}_{\nu = 1} (x+2)^{\nu} (1+\frac{1}{\nu})^{\nu}$ ist der Konvergenzradius $R = 1$ 
 
+Und die Reihe ist konvergent für $x = -3$ und divergent für $x = -1$.
+
 \subsubsection*{Beweis}
 
 $ R = \frac{1}{S}$,
@@ -37,5 +39,29 @@ $ = 0$ und somit konvergent.
 
 
 \subsection*{ii) (1-Fach)}
+
+\subsubsection*{Behauptung}
+
+Für $\sum\limits^{\infty}_{\nu = 0}x^{(\nu^{2})}$ ist der Konvergenzradius $R = 1$.
+Und divergiert für $x \in \{1,-1\}$
+
+\subsubsection*{Beweis}
+
+Für $x \in (-1,1)$ existiert:
+
+$\lim\limits_{\nu \to \infty}|\frac{x^{((\nu+1)^{2})}}{x^{(\nu^{2})}}|
+= \lim\limits_{\nu \to \infty}|\frac{x^{(\nu^{2}+2\nu+1)}}{x^{(\nu^{2})}}|
+= \lim\limits_{\nu \to \infty}|x^{(2\nu+1)}| < 1$
+
+Und damit $R = 1$.
+
+\paragraph*{Für $x = 1$}
+
+$\sum\limits^{\infty}_{\nu = 0}1^{(\nu^{2})} = \sum\limits^{\infty}_{\nu = 0} 1$ konvergiert nicht.
+
+\paragraph*{Für $x = -1$}
+
+$\sum\limits^{\infty}_{\nu = 0}-1^{(\nu^{2})} = \sum\limits^{\infty}_{\nu = 0} -1^{\nu}$ konvergiert nicht.
+
 
 \subsection*{iii) (1-Fach)}
