@@ -1,0 +1,51 @@
+\section*{Nr.H4}
+
+\subsection*{i)}
+
+\paragraph*{Behauptung}
+
+$f(x)$ ist auf $\mathbb{R} \setminus \{0\}$ beliebig oft diff'bar.
+	
+Für
+	\[ P_{n}(x) = 
+		\begin{cases} 
+			1                                         &, \text{für } n = 0 \\
+			-2x^{3}P_{n-1}(x)-x^{2}P^{\prime}_{n-1}   &, \text{für } n > 0 
+		\end{cases} 
+	\]
+	
+gilt $\forall x \in \mathbb{R} \setminus \{0\} \forall n \in \mathbb{N}_{0} : 
+	f^{(n)}(x)= P_{n}(\frac{1}{x})exp(- \frac{1}{x^{2}})$.
+
+\paragraph*{Beweis}
+
+$f^{(n)}(x)$ ist auf $\mathbb{R} \setminus \{0\}$ als Komposition diff'barer Funktionen diffbar.
+
+\subsubsection*{IA}
+	
+Für $n = 0$ gilt $f^{(0)}(x) = exp(- \frac{1}{x^{2}}) = P_{0}(\frac{1}{x})exp(- \frac{1}{x^{2}})$
+
+\subsubsection*{IV}
+
+Sein $n \in \mathbb{N}_{0}$ mit $f^{(n)}(x)= P_{n}(\frac{1}{x})exp(- \frac{1}{x^{2}})$
+
+\subsubsection*{IS}
+
+$f^{(n+1)}(x) = f^{(n)\prime}(x)\\
+	= P_{n}(\frac{1}{x})(-2\frac{1}{x^{3}})exp(- \frac{1}{x^{2}}) 
+		+ P^{\prime}_{n}(\frac{1}{x})(-\frac{1}{x^{2}})exp(- \frac{1}{x^{2}}) \\
+	= (-2(\frac{1}{x})^{3}P_{n}(\frac{1}{x})
+		 -(\frac{1}{x})^{2}P^{\prime}_{n}(\frac{1}{x}))exp(- \frac{1}{x^{2}}) \\
+	= P_{n+1}(\frac{1}{x})exp(- \frac{1}{x^{2}})$ 
+	
+\subsection*{ii) (1-Fach)}
+
+\paragraph*{Behauptung}
+
+$f$ ist in $x = 0$ beliebig oft diff'bar und $f^{(n)}(0) = 0$
+
+\paragraph*{Beweis}
+
+
+
+	

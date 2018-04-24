@@ -1,0 +1,47 @@
+\section*{Nr.H5}
+
+Sei $p$: $\mathbb{R} \to \mathbb{R}$, $p(x)=\sum\limits^{n}_{\nu=0}a_{\nu}x^{\nu}$,
+ein (reelles) Polynom $n$-ten Grades, sowie $x_{0} \in \mathbb{R}$.
+
+\subsection*{i)}
+
+\subsubsection*{Behauptung}
+
+$\forall k \in \{1,...,n\}$ $\forall x \in \mathbb{R}$ gilt
+
+\[
+	p^{(k)}(x) = \sum\limits^{n-k}_{\nu=0}a_{\nu+k}\frac{(\nu+k)!}{\nu!}(x)^{\nu} 
+\]
+
+\subsubsection*{Beweis}
+
+\paragraph*{IA}
+
+Für $k = 1$ gilt:
+
+$
+ p^{(1)}(x)
+ = \sum\limits^{n}_{\nu=1} a_{\nu} \nu (x)^{\nu-1}
+ = \sum\limits^{n-1}_{\nu=0} a_{\nu+1} (\nu+1) (x)^{\nu}
+ = \sum\limits^{n-1}_{\nu=0} a_{\nu+1} \frac{(\nu+1)!}{\nu!} (x)^{\nu}
+$  
+
+
+\paragraph*{IV}
+
+Sein $k \in \{1,...,n-1\}$ mit 
+$p^{(k)}(x) = \sum\limits^{n-k}_{\nu=0}a_{\nu+k}\frac{(\nu+k)!}{\nu!}x^{\nu} $
+
+\paragraph*{IS}
+
+$ p^{(k+1)} = p^{(k)\prime}$
+
+$ = \sum\limits^{n-k}_{\nu=1} a_{\nu+k} \frac{(\nu+k)!}{\nu!} \nu x^{(\nu-1)}$
+
+$ = \sum\limits^{n-k-1}_{\nu=0} a_{\nu+k+1} \frac{(\nu+k+1)!}{(\nu+1)!} (\nu+1)x^{\nu}$
+
+$ = \sum\limits^{n -(k+1)}_{\nu=0} a_{\nu+(k+1)} \frac{(\nu+(k+1))!}{\nu!} x^{\nu}$
+
+\subsection*{ii)}
+
+\subsection*{iii)}
