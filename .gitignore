@@ -4,3 +4,8 @@
 /Blatt1.synctex.gz
 /build/
 *.tex.bak
+*.aux
+*.log
+*.out
+*.pdf
+*.toc
