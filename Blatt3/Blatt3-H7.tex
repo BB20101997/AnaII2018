@@ -1,8 +1,9 @@
 \section*{H7 2-Fach}
 
-\subsection*{a)}
 
 $Sei f:\mathbb{R}\to\mathbb{R}, f(x) := \cos^{2}(x)$
+
+\subsection*{a)}
 
 \subsubsection*{Behauptung}
 Für $v \in \mathbb{N}$ gilt:
@@ -59,3 +60,20 @@ $   = (-1)^{(v+1)} 2^{2(v+1)-2}\sin(2x) $
 
 
 \subsection*{b)}
+
+\subsubsection*{Behauptung}
+
+Bezüglich des Entwicklungspunktes $x_{0} = 0$, gilt:
+$\lim\limits_{n \to \infty} R_{n}(x) = 0$
+
+\subsubsection*{Beweis}
+
+$ |R_{n}(x)| = |\frac{f^{(n+1)}(\xi)}{n!}(x-\xi)(x-x_{0})| $
+
+$ \leq |\frac{2^{2n-1}}{n!}(x-\xi)(x-x_{0})| $
+
+$ =  |\frac{(2^{-1})2^{n}2^{n}}{n!}(x-\xi)(x-x_{0})| $
+
+$ =  |\frac{1}{2}\frac{4^{n}}{n!}(x-\xi)(x-x_{0})| $
+
+$ \frac{4^{n}}{n!} \xrightarrow[n\to\infty]{} 0 \Rightarrow |\frac{1}{2}\frac{4^{n}}{n!}(x-\xi)(x-x_{0})| \xrightarrow[n\to\infty]{} 0 $
