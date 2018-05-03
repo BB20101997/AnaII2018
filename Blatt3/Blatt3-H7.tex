@@ -1,0 +1,61 @@
+\section*{H7 2-Fach}
+
+\subsection*{a)}
+
+$Sei f:\mathbb{R}\to\mathbb{R}, f(x) := \cos^{2}(x)$
+
+\subsubsection*{Behauptung}
+Für $v \in \mathbb{N}$ gilt:
+$f^{(2v-1)} = (-1)^{v} 2^{2v-1} \sin(x)\cos(x) = (-1)^{v} 2^{2v-2} \sin(2x) $ und 
+$f^{(2v)} = (-1)^{v} 2^{2v-1}(-2\sin(x)\cos(x)-2\cos(x)\sin(x)) = (-1)^{v} 2^{2v-1}\cos(2x) $
+
+\subsubsection*{Beweis}
+
+Es gilt:
+
+	$\sin(2x) = \sin(x + x) = \sin(x)\cos(x)+\cos(x)\sin(x) = 2\sin(x)\cos(x)$
+
+	$\cos(2x) = \cos(x + x) =\cos(x)\cos(x) - \sin(x)\sin(x) = \cos^{2}(x)-\sin^{2}(x)$
+
+\paragraph*{IA}
+Für $v = 1$ gilt: 
+
+$	f^{(2v-1)} = f^{(1)} $
+
+$   = (\cos(x)^{2})^{\prime} $
+
+$	= -2\cos(x)\sin(x) $
+	
+$	= (-1)^{v} 2^{2v-1} \sin(x)\cos(x) $
+	
+$	= (-1)^{v} 2^{2v-2} \sin(2x) $
+
+\paragraph*{IV}
+
+Sei $v \in \mathbb{N}$ mit 
+$f^{(2v-1)} = (-1)^{v} 2^{2v-1} \sin(x)\cos(x) = (-1)^{v} 2^{2v-2} \sin(2x)$
+
+\paragraph*{IS}
+
+$   f^{(2v)} = (f^{(2v-1)})^{\prime} $
+
+$   = ((-1)^{v} 2^{2v-2} \sin(2x))^{\prime} $
+
+$   = (-1)^{v} 2^{2v-1}\cos(2x) $
+
+$   = (-1)^{v} 2^{2v-1}(\cos^{2}(x)-\sin^{2}(x)) $ \bigskip
+
+$   f^{(2(v+1)-1)} = (f^{(2v)})^{\prime} $
+
+$   = ((-1)^{v} 2^{2v-1}(\cos^{2}(x)-\sin^{2}(x)))^{\prime} $
+
+$   = (-1)^{v} 2^{2v-1}(-2\sin(x)\cos(x)-2\cos(x)\sin(x)) $
+
+$   = (-1)^{v} 2^{2v-1}(-4)\sin(x)\cos(x) $
+
+$   = (-1)^{(v+1)} 2^{2(v+1)-1}\sin(x)\cos(x) $
+
+$   = (-1)^{(v+1)} 2^{2(v+1)-2}\sin(2x) $
+
+
+\subsection*{b)}
