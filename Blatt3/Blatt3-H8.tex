@@ -1,0 +1,58 @@
+\section*{H8 i)}
+
+\subsection*{Behauptung}
+
+$ \frac{1-x}{1+x} = 1 + 2 \sum\limits_{\nu=1}^{\infty} (-1)^{\nu} x^{\nu}$, für $x \in (-1,1) $
+
+\subsection*{Beweis}
+
+\subsubsection*{Behauptung}
+
+Für $n \in \mathbb{N}_{>0}$ gilt:
+
+$(-1-x)\sum\limits^{n}_{\nu=1}(-1)^{\nu}x^{\nu} = x+(-1)^{(n+1)}x^{(n+1)}$
+
+\subsubsection*{Beweis}
+
+\paragraph*{IA}
+
+Für $n = 1$ gilt:
+
+
+$(-1-x)\sum\limits^{1}_{\nu=1}(-1)^{\nu}x^{\nu} =(-1-x)-x= x+x^{2}$
+
+\paragraph*{IV}
+
+Sei $n \in \mathbb{N}_{>0}$ mit 
+$(-1-x)\sum\limits^{n}_{\nu=1}(-1)^{\nu}x^{\nu} = x+(-1)^{(n+1)}x^{(n+1)}$
+
+\paragraph*{IS}
+
+$  (-1-x)\sum\limits^{n+1}_{\nu=1}(-1)^{\nu}x^{\nu} $
+
+$ = (-1-x)\sum\limits^{n}_{\nu = 1}(-1)^{\nu} x^{\nu} + (-1-x) (-1)^{(n+1)} x^{(n+1)} $
+
+$ \overset{IV}{=} x + (-1)^{(n+1)} n^{(n+1)} + (-1-x) (-1)^{(n+1)} x^{(n+1)}$
+
+$ =  x + (-1)^{(n+1)} n^{(n+1)} - (-1)^{(n+1)} x^{(n+1)} + (-1)^{(n+2)} x^{(n+2)}$
+
+$ = x + (-1)^{(n+2)}x^{(n+2)}$
+
+Für $x \neq 1 $
+$\Rightarrow \sum\limits^{n}_{\nu=1}(-1)^{\nu}x^{\nu} = \frac{x+(-1)^{(n+1)}x^{(n+1)}}{-1-x}$ 
+
+Es folgt $\sum\limits^{\infty}_{\nu=1}(-1)^{\nu}x^{\nu} = \frac{x}{-1-x}$
+
+Also:
+
+$1+2\sum\limits^{\infty}_{\nu=1}(-1)^{\nu}x^{\nu} $
+
+$ = 1+2\frac{x}{-1-x}$
+
+$ = 1 + \frac{-2x}{1+x}$
+
+$ = \frac{1+x-2x}{1+x}$
+
+$ = \frac{1-x}{1+x}$
+
+
