@@ -1,0 +1,55 @@
+\section*{H10}
+
+Sein $a,b \in \mathbb{R}$, $a < b$, $f : [a,b] \to \mathbb{R}$ und $g:[a,b] \to \mathbb{R}, g(x)=mx$
+
+\subsection*{i)}
+
+\subsubsection*{Behauptung}
+
+	Für $m := \frac{1}{b-a} \int\limits_{a}^{b}f(x) \,dx$ gilt:
+	
+	$\int\limits_{a}^{b}(f(x)-mx)\,dx = 0$
+	
+\subsubsection*{Beweis}
+
+$\int\limits_{a}^{b}(f(x)-mx)\,dx = 0$
+
+$\Rightarrow \int\limits_{a}^{b}(x)\,dx = \int\limits_{a}^{b}mx\,dx = (b-a)m$
+
+$\Rightarrow \frac{1}{b-a} \int\limits_{a}^{b}f(x) \,dx = m$
+
+\subsection*{ii)}
+
+\subsubsection*{Behauptung}
+
+Für $m := ?$ gilt:
+
+$\int\limits_{a}^{b}(f(x)-mx)^{2}\,dx$ ist minimal.
+
+\subsubsection*{Beweis}
+
+$ h(m) := \int\limits_{a}^{b}(f(x)-mx)^{2}\,dx$
+
+$ = \int\limits_{a}^{b}(f(x)-mx)(f(x)-mx)\,dx$
+
+
+$ = \int\limits_{a}^{b}f(x)^{2}-2f(x)mx+m^{2}x^{2}\,dx$
+
+$ = \int\limits_{a}^{b}f(x)^{2}\,dx 
+-2m\int\limits_{a}^{b}f(x)x\,dx 
++ m^{2}\int\limits_{a}^{b}x^{2}\,dx$
+
+$ = \int\limits_{a}^{b}f(x)^{2}\,dx 
+-2m\int\limits_{a}^{b}f(x)x\,dx 
++ m^{2}\frac{b^{3}-a^{3}}{3}$
+
+$h(m)$ hat ein Extremum für $h^{\prime}(m) = 0$
+
+$ h'(m) = 2m\frac{b^{3}-a^{3}}{3} - 2\int\limits_{a}^{b}f(x)x\,dx $
+
+$\Rightarrow 2m\frac{b^{3}-a^{3}}{3} =  2\int\limits_{a}^{b}f(x)x\,dx $
+
+$\Rightarrow m =  \frac{3\int\limits_{a}^{b}f(x)x\,dx}{b^{3}-a^{3}} $
+
+TODO is this a Minimum?
+
