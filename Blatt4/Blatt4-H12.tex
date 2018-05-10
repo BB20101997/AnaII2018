@@ -1,0 +1,44 @@
+\section*{H12}
+
+\subsection*{i)}
+
+\subsubsection*{Behauptung}
+
+$\int\limits^{\frac{1}{2}}_{\frac{1}{4}} \frac{\arcsin(\sqrt{x})}{2\sqrt{x}\sqrt{1-x}}\,dx = ?$
+
+\subsubsection*{Beweis}
+
+$\int\limits^{\frac{1}{2}}_{\frac{1}{4}} \frac{\arcsin(\sqrt{x})}{2\sqrt{x}\sqrt{1-x}}\,dx$
+$ = \int\limits^{\sqrt{\frac{1}{2}}}_{\frac{1}{2}} \frac{\arcsin(z)}{2z\sqrt{1-z^{2}}}\,dz$
+$ = \int\limits^{\sqrt{\frac{1}{2}}}_{\frac{1}{2}} \frac{\arcsin(z)}{2z\arcsin^{\prime}(z)}\,dz$
+$ = \frac{1}{2} \int\limits^{\sqrt{\frac{1}{2}}}_{\frac{1}{2}} \frac{\arcsin(z)}{z\arcsin^{\prime}(z)}\,dz$
+$ = \frac{1}{2} \int\limits^{\sqrt{\frac{1}{2}}}_{\frac{1}{2}} 
+	\frac{\arcsin(z)\sin^{\prime}(z)}{z}\,dz$
+	
+$ = \frac{1}{2} \int\limits^{\sqrt{\frac{1}{2}}}_{\frac{1}{2}} 
+	\frac{\arcsin(z)\cos(z)}{z}\,dz$
+
+
+\subsection*{ii)}
+
+\subsubsection*{Behauptung}
+
+$x \to \frac{x}{(1+x^{2})^2}$ hat $ ? + C$ als Stammfunktion
+
+\subsubsection*{Beweis}
+
+$   \frac{x}{(1+x^{2})^2} $
+$ = \frac{1}{(1+x^{2})}\frac{x}{(1+x^{2})}$
+$ = arctan^{\prime}(x)(\frac{1}{x}-\frac{1}{1+x^{2}})$
+
+\paragraph*{}
+
+$\int arctan^{\prime}(x)(\frac{1}{x}-\frac{1}{1+x^{2}}) \,dx$
+
+$ = arctan(x)(\frac{1}{x}-\frac{1}{1+x^{2}}) - \int \arctan(x) (-\frac{1}{x^{2}}-arctan(x))\,dx $
+
+
+$ = arctan(x)(\frac{1}{x}-\frac{1}{1+x^{2}}) 
++ \int \arctan(x)^{2}\,dx 
++ \int\frac{\arctan(x)}{x^{2}}\,dx $
+
