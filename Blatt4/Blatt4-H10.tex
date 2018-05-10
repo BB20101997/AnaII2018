@@ -11,8 +11,10 @@ Sein $a,b \in \mathbb{R}$, $a < b$, $f : [a,b] \to \mathbb{R}$ und $g:[a,b] \to 
 	$\int\limits_{a}^{b}(f(x)-mx)\,dx = 0$
 	
 \subsubsection*{Beweis}
+Sei $m = \frac{2}{b^{2}-a^{2}} \int\limits_{a}^{b}f(x) \,dx$
+Es gilt:
+$\int\limits_{a}^{b}(f(x)-mx)\,dx = \int\limits_{a}^{b}f(x)\,dx - \int\limits_{a}^{b}mx\,dx = \int\limits_{a}^{b}f(x)\,dx - m * \frac{b^{2}-a^{2}}{2} = \int\limits_{a}^{b}f(x)\,dx - \frac{2}{b^{2}-a^{2}} \int\limits_{a}^{b}f(x) \,dx * \frac{b^{2}-a^{2}}{2} = 0$
 
-$\int\limits_{a}^{b}(f(x)-mx)\,dx = 0$
 
 $\Rightarrow \int\limits_{a}^{b}(x)\,dx = \int\limits_{a}^{b}mx\,dx = \frac{b^{2}-a^{2}}{2}m$
 
