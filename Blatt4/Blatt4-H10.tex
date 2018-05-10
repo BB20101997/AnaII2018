@@ -22,7 +22,7 @@ $\Rightarrow \frac{2}{b^{2}-a^{2}} \int\limits_{a}^{b}f(x) \,dx = m$
 
 \subsubsection*{Behauptung}
 
-Für $m := ?$ gilt:
+Für $m := \frac{3\int\limits_{a}^{b}f(x)x\,dx}{b^{3}-a^{3}}$ gilt:
 
 $\int\limits_{a}^{b}(f(x)-mx)^{2}\,dx$ ist minimal.
 
@@ -45,11 +45,41 @@ $ = \int\limits_{a}^{b}f(x)^{2}\,dx
 
 $h(m)$ hat ein Extremum für $h^{\prime}(m) = 0$
 
-$ h'(m) = 2m\frac{b^{3}-a^{3}}{3} - 2\int\limits_{a}^{b}f(x)x\,dx $
+$ h^{\prime}(m) = 2m\frac{b^{3}-a^{3}}{3} - 2\int\limits_{a}^{b}f(x)x\,dx $
 
 $\Rightarrow 2m\frac{b^{3}-a^{3}}{3} =  2\int\limits_{a}^{b}f(x)x\,dx $
 
 $\Rightarrow m =  \frac{3\int\limits_{a}^{b}f(x)x\,dx}{b^{3}-a^{3}} $
 
-TODO is this a Minimum?
+$h^{\prime\prime}(m) = 2\frac{b^{3}-a^{3}}{3} > 0$
 
+$\Rightarrow$ für $m = \frac{3\int\limits_{a}^{b}f(x)x\,dx}{b^{3}-a^{3}}$ ist $h(m)$
+ein Minimum.
+
+
+\subsection*{iii)}
+
+Für $a = 0$ und $b = 1$, sowie $f(x) = 2x^{2}-\frac{x}{2} + \frac{1}{3}$ 
+
+Aus i) folgt:
+
+$m = \frac{2}{b^{2}-a^{2}} \int\limits_{a}^{b}f(x) \,dx $
+$m = \frac{2}{1^{2}-0^{2}} \int\limits_{0}^{1}2x^{2}-\frac{x}{2} + \frac{1}{3} \,dx$
+$m = 2 \int\limits_{0}^{1}2x^{2}-\frac{x}{2} + \frac{1}{3} \,dx $
+
+$m = 2 \left[\frac{2}{3}x^{3} - \frac{x^{2}}{4} + \frac{x}{3}\right]_{0}^{1} $
+$m = 2 (\frac{2}{3} - \frac{1}{4} + \frac{1}{3}) = 2 \frac{3}{4} = 1,5 $
+
+
+
+
+Aus ii) folgt:
+
+$m = \frac{3\int\limits_{a}^{b}f(x)x\,dx}{b^{3}-a^{3}} $
+$ = \frac{3\int\limits_{0}^{1}f(x)x\,dx}{1^{3}-0^{3}} $
+$ = 3\int\limits_{0}^{1}f(x)x\,dx$
+$ = 3\int\limits_{0}^{1}(2x^{2}-\frac{x}{2} + \frac{1}{3})x\,dx  $
+
+$ = 3\int\limits_{0}^{1}2x^{3}-\frac{x^{2}}{2} + \frac{x}{3}\,dx  $
+$ = 3 \left[\frac{1}{2}x^{4}-\frac{x^{3}}{6} + \frac{x^{2}}{6}\right]^{1}_{0} $
+$ = 3 (\frac{1}{2}-\frac{1}{6} + \frac{1}{6}) = 1,5$
